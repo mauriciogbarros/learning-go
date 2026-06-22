@@ -11,14 +11,14 @@ import (
 )
 
 func main() {
-	fmt.Print("Enter a grade: ")				// Prompt user to enter a grade.
+	fmt.Print("Enter a grade: ") // Prompt user to enter a grade.
 
-	reader := bufio.NewReader(os.Stdin)	// Buffered reader that gets text
-																			// from the keyboard.
+	reader := bufio.NewReader(os.Stdin) // Buffered reader that gets text
+	// from the keyboard.
 
-	input, err := reader.ReadString('\n')		// Return everything the user has
-																			// typed, up to where they pressed
-																			// Enter key.
+	input, err := reader.ReadString('\n') // Return everything the user has
+	// typed, up to where they pressed
+	// Enter key.
 
 	if err != nil {
 		log.Fatal(err)
