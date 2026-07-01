@@ -42,7 +42,5 @@ func BubbleSort(numbers []int) {
 }
 
 func Swap(slice []int, index int) {
-	temp := slice[index]
-	slice[index] = slice[index + 1]
-	slice[index + 1] = temp
+	slice[index], slice[index + 1] = slice[index + 1], slice[index]
 }
